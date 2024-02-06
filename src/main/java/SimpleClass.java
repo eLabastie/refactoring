@@ -13,5 +13,16 @@ public class SimpleClass {
     }
 
 
+    public class DateUtils {
+        public static boolean isNowBetween(LocalDate startingDate, LocalDate
+                endingDate) {
+            LocalDate date = LocalDate.now();
+            return date.isBefore(endingDate) && date.isAfter(startingDate);
+        }
+        public static boolean isDateBetween(LocalDate date, LocalDate startingDate,
+                                            LocalDate endingDate) {
+            return date.isBefore(endingDate) && date.isAfter(startingDate);
+        }
+    }
 }
 
