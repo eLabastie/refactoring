@@ -20,8 +20,13 @@ public class SimpleClass {
             return date.isBefore(endingDate) && date.isAfter(startingDate);
         }
         public static boolean isDateBetween(LocalDate date, LocalDate startingDate,
-                                            LocalDate endingDate) {
+                                            LocalDate endingDate, boolean inclusive) {
             return date.isBefore(endingDate) && date.isAfter(startingDate);
+        }
+
+        public static boolean isDateOutside(LocalDate date, LocalDate startingDate,
+                                            LocalDate endingDate) {
+            return !isDateBetween(date, startingDate, endingDate, );
         }
     }
 }
