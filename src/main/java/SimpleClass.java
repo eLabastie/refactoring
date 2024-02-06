@@ -29,5 +29,6 @@ public class SimpleClass {
             return !isDateBetween(date, startingDate, endingDate, );
         }
     }
-}
+
+    }
 
